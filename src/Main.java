@@ -2,6 +2,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-	    System.out.println(Const.AU);
+        //double x = 54.55;
+	    System.out.println(AMath.Ddd(54,32,59.999999999));
     }
 }
