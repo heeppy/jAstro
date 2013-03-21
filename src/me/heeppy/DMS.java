@@ -1,27 +1,16 @@
+package me.heeppy;
+
 /**
  * User: heeppy
  * Date: 15.03.13
  * Time: 21:01
  */
+
 public class DMS
 {
     private int D;
     private int M;
     private double S;
-
-    public DMS(int d, int m, double s)
-    {
-        D = d;
-        M = m;
-        S = s;
-    }
-
-    public DMS()
-    {
-        D = 0;
-        M = 0;
-        S = 0;
-    }
 
     public int getD()
     {
@@ -51,5 +40,17 @@ public class DMS
     public void setS(double s)
     {
         S = s;
+    }
+
+    public DMS(int d, int m, double s)
+    {
+        D = d;
+        M = m;
+        S = s;
+    }
+
+    public DMS()
+    {
+
     }
 }

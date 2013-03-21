@@ -1,12 +1,10 @@
-/**
+package me.heeppy; /**
  * User: heeppy
  * Date: 15.03.13
  * Time: 20:51
   */
 
-import java.lang.*;
-
-public class AMath
+public class Math
 {
     static double Fraction(double x)
     {
@@ -33,13 +31,13 @@ public class AMath
         {
             sign = -1.0;
         }
-        return sign * (Math.abs(D) + Math.abs(M)/60.0 + Math.abs(S)/3600.0);
+        return sign * (java.lang.Math.abs(D) +java.lang.Math.abs(M)/60.0 + java.lang.Math.abs(S)/3600.0);
     }
 
     /**
      * Вычисляет градусы, минуты и секунды дуги
      * @param Ddd - угол в градусах в десятичном представлении
-     * @return объект типа DMS
+     * @return объект типа me.heeppy.DMS
      */
 
     static DMS GetDMS(double Ddd)
@@ -47,7 +45,7 @@ public class AMath
         double x;
         DMS ret = new DMS();
 
-        x = Math.abs(Ddd);
+        x = java.lang.Math.abs(Ddd);
         ret.setD((int)x);
         x = (x - ret.getD())*60.0;
         ret.setM((int)x);
